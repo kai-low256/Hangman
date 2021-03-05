@@ -65,7 +65,7 @@ lives_visual_dict = {
         7: "",
     }
 
-# First Hangman Version
+# The code
 
 def get_valid_word(words):
     word = random.choice(Words)  # randomly chooses something from the list
