@@ -1,7 +1,7 @@
 # Hangman
 Hangman code made in VScode.
 
-Have not done the `N` on the `Play Agian? (Y/N)` part but other then that, the whole code works.
+Have not done the `N` on the `Play Again? (Y/N)` part but other then that, the whole code works.
 
 The image below shows the code in action.
 
