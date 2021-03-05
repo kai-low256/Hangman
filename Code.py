@@ -118,17 +118,9 @@ def hangman():
         print(f'YAY! You guessed the word was {word}!')
 
 def playAgain():
-    #word = get_valid_word(Words)
     hangman()
     while input('\nPlay Agian? (Y/N) ') == 'Y' or 'y':
-        #word = get_valid_word(Words)
         hangman()
-        #print('YAY, you chose to play agian!\n')
-    """
-    while input('Play Agian? (Y/N)') == 'N' or 'n':
-        print('No worries, I will play with you agian soon! :D')
-    """
-
 
 if __name__ == '__main__':
     playAgain()
