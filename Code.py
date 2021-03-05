@@ -65,7 +65,7 @@ lives_visual_dict = {
         7: "",
     }
 
-# The code
+# Play Hangman
 
 def get_valid_word(words):
     word = random.choice(Words)  # randomly chooses something from the list
@@ -86,7 +86,7 @@ def hangman():
     while len(word_letters) > 0 and lives > 0:
         # letters used
         # ' '.join(['a', 'b', 'cd']) --> 'a b cd'
-        print(f'\nYou have {lives} lives left and you have used these letters:', ', '.join(used_letters))
+        print(f'\n======= CURRENT ROUND BELOW =========\nYou have {lives} lives left and you have used these letters:', ', '.join(used_letters))
 
         # what current word is (ie W - R D)
         word_list = [letter if letter in used_letters else '_' for letter in word]
@@ -102,13 +102,13 @@ def hangman():
 
             else:
                 lives = lives - 1  # takes away a life if wrong
-                print(f'\n======= CURRENT ROUND BELOW =========\nYour letter, {user_letter} was not in the word')
+                print(f'\nYour letter, {user_letter} was not in the word')
 
         elif user_letter in used_letters:
-            print('\n======= CURRENT ROUND BELOW =========\nYou have already used that letter. Guess another letter.\n')
+            print('\nYou have already used that letter. Guess another letter.')
 
         else:
-            print('\n======= CURRENT ROUND BELOW =========\nThat is not a valid letter.')
+            print('\nThat is not a valid letter.')
 
     # gets here when len(word_letters) == 0 OR when lives == 0
     if lives == 0:
@@ -119,9 +119,8 @@ def hangman():
 
 def playAgain():
     hangman()
-    while input('\nPlay Agian? (Y/N) ') == 'Y' or 'y':
+    while input('\nPlay Again? (Y/N) ') == 'Y' or 'y':
         hangman()
 
 if __name__ == '__main__':
     playAgain()
-    
