@@ -3,4 +3,4 @@ Have not done the `N` on the `Play Again? (Y/N)`.
 
 A Picture below.
 
-![Hangman in action](https://user-images.githubusercontent.com/68333641/110067453-dcb8e200-7dc7-11eb-9c1a-170fc222401a.JPG)
+![Capture](https://user-images.githubusercontent.com/68333641/142390746-f53bf648-bd89-4f75-aade-6bad2b16a7c5.JPG)
