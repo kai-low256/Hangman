@@ -87,7 +87,7 @@ def hangman():
     while len(word_letters) > 0 and lives > 0:
         # letters used
         # ' '.join(['a', 'b', 'cd']) --> 'a b cd'
-        print(f'\n======= CURRENT ROUND BELOW =========\nYou have {lives} lives left and you have used these letters:', ', '.join(used_letters))
+        print(f'\n================================\nYou have {lives} lives left and you have used these letters:', ', '.join(used_letters))
 
         # what current word is (ie W - R D)
         word_list = [letter if letter in used_letters else '_' for letter in word]
@@ -113,15 +113,18 @@ def hangman():
     # gets here when len(word_letters) == 0 OR when lives == 0
     if lives == 0:
         print(lives_visual_dict[lives])
-        print(f'You died, sorry. The word was {word}, Better Luck next time')
+        print(f'You died, sorry. The word was {word}, Better Luck next time :)')
+        playAgain()
     else:
         print(f'\nCongrats! You guessed the word, it was {word}!')
+        playAgain()
 
 def playAgain():
     hangman()
-    while input('\nPlay Again? (Y/N) ') == 'Y' or 'y':
+    playAgain_message = input('\nPlay Again? (Y/N) ')
+    while playAgain_message == 'Y' or 'y':
         hangman()
-
+        
 if __name__ == '__main__':
     playAgain()
-        
+    
