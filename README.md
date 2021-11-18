@@ -1,6 +1,4 @@
 # Hangman
-Hangman code made in VScode.
-
 Have not done the `N` on the `Play Again? (Y/N)`.
 
 A Picture below.
